@@ -21,3 +21,18 @@ for num in number:
     else:
         answer.append("odd")   
 print(answer)    
+
+
+import random
+# random 모듈에서 sample(컬렉션, 샘플수) 함수는 지정된 컬렉션으로부터 샘플수만큼 랜덤 추출을 한다.
+numbers = random.sample(range(20), random.randint(1, 10))
+
+answer2 = [('even' if x % 2 == 0 else 'odd') for x in numbers]
+print(answer2)
+
+answer3 = [['even', 'odd'][x % 2] for x in numbers]
+print(answer3)
+# * numbers 생성하려고 random 모듈 사용했는데 알면 좋은 거고 몰라도 되는 거고.
+# list comprehension에서 조건식의 괄호는 식별하기 편하라고 넣은 것임
+
+
