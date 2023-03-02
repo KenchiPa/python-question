@@ -16,12 +16,9 @@ print("answer", answer)  # 문제점 발견: 대소문자 구분되어 중복이
 
 s = "Yellow Yaks like yelling and yawning and yesturday they yodled while eating yuky yams"
 
-c = [c.lower() for c in s if c.isalpha() and c.lower() not in 'aeiou']
-print("c", c)
-c = [c.lower() for c in s if c.isalpha() not in 'aeiou']
-print("c", c)
+print([c.lower() for c in s if c.isalpha() and c.lower() not in 'aeiou'])
 
-print("answer", sorted(set([c.lower() for c in s if c.isalpha() and c.lower() not in 'aeiou'])))
+print("answer2", sorted(set([c.lower() for c in s if c.isalpha() and c.lower() not in 'aeiou'])))
 
 # * sorted 안하고 list로 list로 변환을 해도 되지만, sort안하면 순서대로 나오지 않아서 값을 확인하기 쉽지 않으니까.
 

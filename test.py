@@ -1,12 +1,20 @@
-def solution(my_string):
-    # my_string: 문자열
-    # return my_string 거꾸로 뒤집은 문자열 
-    result = []
-    for char in my_string:
-        result.insert(0 , char)
-        print("list", result)
-        a = str(result).split(',')
-        print(a)
+num = 3
+total = 12
+
+def solution(num, total):
+    # num: 연속해서 더할 갯수
+    # total: num개를 연속해서 더한 값
+    # 정수배열을 오름차순으로 return
+    
+    max = (total + num) / num
+
+    l = [int(max-x+1) for x in range(0, num)]
+    l.sort()
+    print(l)
+    
+    
+
+solution(num, total)
 
 
-solution('abcdef')
+# result: 1

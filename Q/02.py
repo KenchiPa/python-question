@@ -8,4 +8,5 @@ print(answer)
 
 # * 문자열을 사용하지 않는 방법도 생각해보세요.
 
-
+numbers = [x for x in range(1, 1001) if (x % 10 == 3 or x // 10 % 10 == 3 or x // 100 % 10 == 3)]
+print(numbers)
