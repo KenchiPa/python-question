@@ -3,7 +3,7 @@
 my_string = "p2o4i8gj2"
 
 def solution(my_string):
-    a = [int(x) for x in my_string if x.isdigit()].
+    a = [int(x) for x in my_string if x.isdigit()]
     a.sort()
     print(a)
 
