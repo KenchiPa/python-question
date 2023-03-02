@@ -11,11 +11,6 @@ def solution(n, t):
     print(b)
     return b
 
-
-    # a = [n**(x+1) for x in range(n, t+1)]
-    # print(a)
-    # print(a[-1])
-
 solution(n, t)
 
 # 기댓값: "2048"
